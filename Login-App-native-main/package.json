@@ -1,0 +1,38 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "main": "index.js",
+ "scripts": {
+  "start": "concurrently -n \"SERVER,EXPO\" -c \"blue,yellow\" \"npm run server\" \"expo start\"",
+  "android": "expo start --android",
+  "ios": "expo start --ios",
+  "web": "expo start --web",
+  "server": "cd ../server && npm start"
+},
+
+  "dependencies": {
+    "@expo/metro-runtime": "~5.0.4",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-navigation/native": "^7.1.10",
+    "@react-navigation/native-stack": "^7.3.14",
+    "@reduxjs/toolkit": "^2.8.2",
+    "axios": "^1.9.0",
+    "expo": "~53.0.10",
+    "expo-status-bar": "~2.2.3",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-native": "0.79.3",
+    "react-native-gesture-handler": "~2.24.0",
+    "react-native-reanimated": "~3.17.4",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-screens": "~4.11.1",
+    "react-native-web": "^0.20.0",
+    "react-redux": "^9.2.0",
+    "expo-linear-gradient": "~14.1.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@react-native-community/cli": "^18.0.0"
+  },
+  "private": true
+}
